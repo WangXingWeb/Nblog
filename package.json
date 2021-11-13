@@ -1,0 +1,21 @@
+{
+    "name": "Nblog",
+    "version": "1.0.0",
+    "description": "王星的技术博客",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vuepress dev docs",
+        "build": "vuepress build docs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/WangXingWeb/Nblog.git"
+    },
+    "keywords": [],
+    "author": "wangxing",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/WangXingWeb/Nblog/issues"
+    },
+    "homepage": "https://github.com/WangXingWeb/Nblog#readme"
+}
