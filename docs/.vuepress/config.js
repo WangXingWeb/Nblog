@@ -35,6 +35,7 @@ module.exports = {
         nav: [
             { text: "Home", link: "/" },
             { text: "About", link: "/about/" },
+            { text: "js", link: "/js/js数组去重/" },
             {
                 text: "css",
                 items: [
@@ -75,6 +76,7 @@ module.exports = {
         //     },
         // ],
         sidebar: {
+            "/js/": ["/js/js数组去重"],
             "/css/": [
                 {
                     title: "css",
