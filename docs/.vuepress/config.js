@@ -2,7 +2,7 @@ const moment = require("moment");
 moment.locale("zh-cn");
 
 module.exports = {
-    base: "/Nblog/",
+    base: "/",
     title: "漫卷",
     describe: "漫卷诗书喜欲狂",
     head: [
