@@ -17,7 +17,7 @@ title: css盒模型
 标准盒模型中 width 指的是内容区域 content 的宽度；height 指的是内容区域 content 的高度。
 标准盒模型下盒子的大小 = content + padding + border + margin
 
-![](file:///Users/xingzai/project/grideaBlog/post-images/1600133228670.jpg)
+![标准盒模型](/Nblog/assets/img/标准盒模型.jpeg)
 
 ## 怪异(IE)盒模型
 
@@ -25,7 +25,7 @@ title: css盒模型
 
 怪异盒模型下盒子的大小=width（content + padding + border) + margin
 
-![](file:///Users/xingzai/project/grideaBlog/post-images/1600133247203.jpg)
+![怪异盒模型](/Nblog/assets/img/ie盒模型.jpeg)
 
 如何切换盒模型
 

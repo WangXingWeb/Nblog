@@ -1,4 +1,8 @@
+const moment = require("moment");
+moment.locale("zh-cn");
+
 module.exports = {
+    base: "/Nblog/",
     title: "漫卷",
     describe: "漫卷诗书喜欲狂",
     head: [
@@ -87,4 +91,15 @@ module.exports = {
             ],
         },
     },
+    plugins: [
+        [
+            "@vuepress/last-updated",
+            {
+                transformer: (timestamp, lang) => {
+                    return moment(timestamp).format("llll");
+                    //return moment(timestamp).fromNow();
+                },
+            },
+        ],
+    ],
 };
