@@ -76,7 +76,7 @@ module.exports = {
         //     },
         // ],
         sidebar: {
-            "/js/": ["/js/js数组去重"],
+            "/js/": ["/js/js数组去重", "js要不要加分号"],
             "/css/": [
                 {
                     title: "css",
