@@ -107,7 +107,7 @@ module.exports = {
     //     },
     // ],
     sidebar: {
-      "/tool/": ["/tool/拷贝vscode插件到另一台电脑"],
+      "/tool/": ["/tool/拷贝vscode插件到另一台电脑", "/tool/github添加密钥"],
       "/js/": ["/js/js数组去重", "js要不要加分号"],
       "/css/": [
         {
