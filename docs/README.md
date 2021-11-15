@@ -16,6 +16,4 @@ features:
 footer: MIT Licensed | Copyright © 2018-present WangXing
 ---
 
-# pwa
 
-提示更新成功吗？
