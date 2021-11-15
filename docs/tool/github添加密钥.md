@@ -3,6 +3,7 @@ title: github添加密钥
 ---
 
 提交文件到github，不成功，出现如下的情况，就代表着github上面没有设置秘钥
+
 ![nossh](/assets/img/nossh.png)
 
 ## 生成ssh密钥
