@@ -9,7 +9,6 @@ module.exports = {
         ['link', { rel: 'ico', href: '/favicon.ico' }],
         ['meta', { name: 'keywords', content: '漫卷,前端,前端开发,javascript,js,css,sass,html,vue,react,jquery，微信小程序' }],
         ['meta', { name: 'author', content: '漫卷' }],
-        ['link', { rel: 'icon', href: `favicon.ico` }],
         ['link', { rel: 'manifest', href: '/manifest.json' }],
         ['meta', { name: 'theme-color', content: '#3eaf7c' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
