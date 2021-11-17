@@ -1,0 +1,18 @@
+module.exports = [
+    { text: '工具', link: '/tool/拷贝vscode插件到另一台电脑' },
+    { text: 'js', link: '/js/js数组去重/' },
+    {
+        text: 'css',
+        items: [
+            {
+                text: 'css',
+                link: '/css/css盒模型'
+            },
+            {
+                text: 'sass',
+                link: '/css/sass/sass混合器'
+            }
+        ]
+    },
+    { text: '旧版', link: 'https://iwangxing.cn/manjuan' }
+]
