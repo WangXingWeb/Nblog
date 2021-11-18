@@ -1,5 +1,4 @@
 module.exports = [
-    { text: '工具', link: '/tool/拷贝vscode插件到另一台电脑' },
     { text: 'js', link: '/js/js数组去重/' },
     {
         text: 'css',
@@ -14,5 +13,7 @@ module.exports = [
             }
         ]
     },
+    { text: 'vue', link: '/vue/监听器/' },
+    { text: '工具', link: '/tool/拷贝vscode插件到另一台电脑' },
     { text: '旧版', link: 'https://iwangxing.cn/manjuan' }
 ]
