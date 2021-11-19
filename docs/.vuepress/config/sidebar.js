@@ -1,7 +1,7 @@
 module.exports = {
     '/tool/': ['/tool/拷贝vscode插件到另一台电脑', '/tool/github添加密钥'],
     '/js/': ['/js/js数组去重', 'js要不要加分号'],
-    '/vue/': ['/vue/监听器', '/vue/样式穿透', 'vue遍历对象属性'],
+    '/vue/': ['/vue/watch监听器', '/vue/样式穿透', 'vue遍历对象属性'],
     '/css/': [
         {
             title: 'css',
