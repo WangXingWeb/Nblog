@@ -2,6 +2,14 @@ const moment = require('moment')
 const secret = require('./secret')
 moment.locale('zh-cn')
 module.exports = {
+    '@vuepress/medium-zoom': {
+        selector: 'img.custom',
+        // medium-zoom options here
+        // See: https://github.com/francoischalifour/medium-zoom#options
+        options: {
+            margin: 16
+        }
+    },
     '@vuepress/last-updated': {
         transformer: (timestamp, lang) => {
             return moment(timestamp).format('llll')
@@ -22,5 +30,6 @@ module.exports = {
         autoCreateIssue: true,
         ...secret
     },
-    '@vuepress/plugin-back-to-top': true
+    '@vuepress/plugin-back-to-top': true,
+    'vuepress-plugin-auto-sidebar': {}
 }

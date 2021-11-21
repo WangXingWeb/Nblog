@@ -17,3 +17,5 @@ footer: MIT Licensed | Copyright © 2018-present WangXing
 ---
 
 自动化部署 2
+
+![GitHub issues](https://img.shields.io/github/issues/WangXingWeb/Nblog)

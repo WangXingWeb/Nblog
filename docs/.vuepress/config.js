@@ -12,8 +12,8 @@ module.exports = {
         lastUpdated: '更新时间',
         logo: '/assets/img/logo.png',
         navbar: true,
-        nav: Nav,
-        sidebar: Sidebar
+        nav: Nav
+        //sidebar: Sidebar
     },
     plugins: Plugins
 }

@@ -15,6 +15,6 @@ module.exports = [
     },
     { text: 'vue', link: '/vue/watch监听器/' },
     { text: '工具', link: '/tool/拷贝vscode插件到另一台电脑' },
-    { text: '收藏', link: '/collection/' },
+    { text: '收藏', link: '/收藏/组件库' },
     { text: '旧版', link: 'https://iwangxing.cn/manjuan' }
 ]
