@@ -10,6 +10,10 @@ module.exports = [
             {
                 text: 'sass',
                 link: '/css/sass/sass混合器'
+            },
+            {
+                text: 'less',
+                link: '/css/less/构建css工具库less版'
             }
         ]
     },
