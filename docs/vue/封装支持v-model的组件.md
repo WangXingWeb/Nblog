@@ -2,4 +2,6 @@
 title: 封装支持v-model的组件
 ---
 
-model
+## kjkj
+
+<<< @/docs/.vuepress/components/StepNumber.vue
