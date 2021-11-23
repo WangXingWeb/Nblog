@@ -2,8 +2,6 @@
 title: 封装支持v-model的组件
 ---
 
-> 2.2.0 新增
-
 ## v-model原理
 
 v-model是一个语法糖
