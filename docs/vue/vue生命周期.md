@@ -2,7 +2,7 @@
 title: vue生命周期
 ---
 
-<img class="custom" src="https://cn.vuejs.org/images/lifecycle.png" />
+<img class="custom" :src="$withBase('/assets/img/vue.png')" />
 
 ## beforeCreate
 
