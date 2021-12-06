@@ -2,7 +2,7 @@
 title: React笔记
 ---
 
-## 依赖
+### 依赖
 
 需要安装 react 和 react-dom 两个包
 
@@ -46,7 +46,7 @@ ReactDOM.render(mydiv, document.getElementById('app'))
 
 我们一般一个网页上都有几十个甚至几百个节点元素，如果一个一个这样嵌套就太麻烦了。那 React 是怎么解决这个问题呢？
 
-## jsx
+### jsx
 
 jsx 并不是真正的 html 代码，jxs 代码要经过 babel 转化 React.createElement 这样的代码再去渲染。
 
@@ -93,7 +93,7 @@ module.exports = {
 }
 ```
 
-## jsx 语法
+### jsx 语法
 
 -   jsx 用的是 xml 语法，比 html 严格
 -   js 代码要放到{}中
@@ -101,9 +101,9 @@ module.exports = {
 -   用`className`来代替`class`,`htmlFor`替换`label`的`for`属性
 -   jsx 语法中，标签必须闭合。
 
-# react 创建组件
+## react 创建组件
 
-## 用函数的方式创建组件
+### 用函数的方式创建组件
 
 -   函数名必须大写
 -   必须`return`虚拟 dom 或者 null
@@ -120,7 +120,7 @@ ReactDOM.render(
 )
 ```
 
-### 给组件传递参数
+#### 给组件传递参数
 
 ```javascript
 function Hello(props) {
@@ -139,7 +139,7 @@ ReactDOM.render(
 
 > 需要注意的是：组件参数是只读的，不能修改。
 
-### 利用 es6 展开运算符传参
+#### 利用 es6 展开运算符传参
 
 ```javascript
 function Hello(props) {
@@ -162,7 +162,7 @@ ReactDOM.render(
 )
 ```
 
-### 使用 jsx 文件创建组件
+#### 使用 jsx 文件创建组件
 
 创建 Hello.jsx 文件
 
@@ -221,7 +221,7 @@ resolve: {
 import Hello from '@/components/Hello'
 ```
 
-## 使用 Class 关键字创建组件
+### 使用 Class 关键字创建组件
 
 最基础的组件结构
 
@@ -235,7 +235,7 @@ class Hello extends React.Component {
 export default Hello
 ```
 
-### Class 组件传参
+#### Class 组件传参
 
 ```javascript
 import Book from '@/components/book'
@@ -269,7 +269,7 @@ export default Book
 
 使用`this.props.key`的方式取参数
 
-## 两种创建组件方式的区别
+### 两种创建组件方式的区别
 
 使用 Class 创建的组件有自己的私有数据和生命周期(有状态组件)；function 创建的组件只有 props，没有似有数据和生命周期函数(无状态组件)。
 无状态组件由于没有私有属性和生命周期，所以他的效率高于有状态组件。
@@ -307,7 +307,7 @@ state 属性是可读可写的。
 -   `props`中的数据是只读的。
 -   `state/data`中的数据是可读可写的。
 
-## 父组件给自组件传参
+### 父组件给自组件传参
 
 下面是一个书单组件，其中么一本书是一个自组件
 Book 组件 Book.jsx
@@ -391,9 +391,9 @@ ReactDOM.render(
 )
 ```
 
-## react 样式
+### react 样式
 
-### 内联样
+#### 内联样
 
 -   用双花括号包裹样式
 -   各样式之间用逗号隔开
@@ -410,7 +410,7 @@ const styleH = { color: 'red', fontSize: '18px', textAlign: 'center' }
 <h1 style="{styleH}">我的书单</h1>
 ```
 
-### 使用.css 样式表
+#### 使用.css 样式表
 
 需要在 webpack 中配置`style-loader`,`css-loader`
 在 webpack.json 文件中 module -> rules 中加一项配置
@@ -438,7 +438,7 @@ module: {
 import '@/css/boolList.css'
 ```
 
-### react 如何解决 css 冲突（css 作用域）
+#### react 如何解决 css 冲突（css 作用域）
 
 通过给 css-loader 添加参数启用 css 模块化
 
@@ -512,7 +512,7 @@ import BookListCss from '@/css/booklist.css'
 
 BookListCss 只属于当前这个组件，所以只有当前这个组件才能拿到`BookListCss.title`的类名，这样就实现了，css 样式的模块化作用域。
 
-### 使用`localIdentName`自定义生成的类名格式
+#### 使用`localIdentName`自定义生成的类名格式
 
 生命生成的类名都很奇怪，我们看不出它代表的意义了，接下来我们给 css-loader 设定参数自定义生成的类名
 可选的参数有
@@ -564,7 +564,7 @@ BookListCss 只属于当前这个组件，所以只有当前这个组件才能�
   }
 ```
 
-# 需改 state 中的值
+## 需改 state 中的值
 
 -   直接使用`this.state.num = 55 ` 不会触发视图更新
 -   想要触发视图更新可以使用`this.setState({num:55})`
@@ -579,11 +579,11 @@ BookListCss 只属于当前这个组件，所以只有当前这个组件才能�
     })
     ```
 
-# 绑定文本框值
+## 绑定文本框值
 
 -   文本框必须提供 onChange 处理函数否则该文本框会被当作只读处理 readOnly
 
-# 使用 ref 获取 DOM 元素引用
+## 使用 ref 获取 DOM 元素引用
 
 和 vue 差不多，vue 为页面上的元素提供了`ref`的属性，如果想要获取元素的引用，则需要使用`this.$refs.引用名称`
 
@@ -591,4 +591,4 @@ BookListCss 只属于当前这个组件，所以只有当前这个组件才能�
 
 在获取 input 的 value 值时，可以通过将传递传输 e 也可以通过 ref 来获取。
 
-# react 生命周期
+## react 生命周期
