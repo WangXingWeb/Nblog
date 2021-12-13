@@ -60,7 +60,7 @@ vscode 配色工具
 
 ## HTML CSS Support
 
-只能提示`css`命名的插件
+智能提示`css`命名的插件
 
 ## Live Sass Compiler
 
