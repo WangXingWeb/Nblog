@@ -1,5 +1,5 @@
 ---
-git命令
+title: git命令
 ---
 
 git remote -v 查看远程仓库地址
