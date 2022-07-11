@@ -21,6 +21,9 @@ title: vue笔记
 
 - 一般来说，v-if 有更高的切换开销，而 v-show 有更高的初始渲染开销。因此，如果需要非常频繁地切换，则使用 v-show 较好；如果在运行时条件很少改变，则使用 v-if 较好。
 
+- 除此之外，v-if可以搭配v-else使用，v-show时不可以和v-else搭配使用的。
+- 还有v-if是可以使用template这个虚拟标签的，v-show不可以，很好理解，因为v-show是通过控制标签的display实现显示隐藏的，template是不会渲染成真正的html标签所以没办法用display控制，所以v-show不可以在template标签上使用。
+
 
 ## vue动态参数
 
