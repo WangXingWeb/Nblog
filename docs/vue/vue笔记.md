@@ -92,3 +92,12 @@ export default {
     <div>div3</div>
 </template>
 ```
+
+## vue 循环对象
+```html
+<template>
+    <div>
+        <div v-for="(value.key.index) in obj" :key="key">{{key}}:{{value}}</div>
+    </div>
+</template>
+```
