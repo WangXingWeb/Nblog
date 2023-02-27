@@ -116,3 +116,56 @@ app.vue
     }
 </script>
 ```
+
+## 未匹配路由跳转到 404 界面
+
+### 通过导航守卫重定向
+
+```javascript
+router.beforeEach((to, from, next) => {
+    if (to.matched.length === 0) {
+        //未匹配到的时候跳转到404页面
+        next({ name: '404Page' })
+    } else {
+        next() //匹配到的时候跳转相应的路由
+    }
+})
+```
+
+### 通过配置路由，当匹配不到路由时，默认跳转到 404 页面
+
+```javascript
+const routes = [
+    homeRouter,
+    {
+        path: '/login', //登录
+        name: 'Login',
+        component: () => import('@/views/Login.vue'),
+        meta: { isPublic: true }
+    },
+    {
+        path: '/chat', //聊天页面
+        name: 'Chat',
+        component: () => import('@/views/chat/Chat.vue')
+    },
+    {
+        path: '/404',
+        name: '404',
+        component: () => import('@/views/404.vue')
+    },
+    {
+        path: '*',
+        redirect: '/404'
+    }
+]
+```
+
+在 vue3 中要写成
+
+```javascript
+//没注册的路由跳转到404
+  {
+    path: "/:pathMatch(.*)",
+    redirect: "/404",
+  },
+```
