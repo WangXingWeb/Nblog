@@ -1,8 +1,10 @@
 ---
-title: Vue Router基本配置
+title: Vue Router
 ---
 
 Vue Router 是 [Vue.js](http://cn.vuejs.org/) 官方的路由管理器。
+
+## 基本配置
 
 下面是一个配置 vue router 的 demo
 
