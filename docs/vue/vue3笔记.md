@@ -159,5 +159,44 @@ watch(
   { immediate: true }
 );
 </script>
+```
 
+## 强制刷新
+
+```js
+import { getCurrentInstance } from 'vue'
+const { ctx: _this }: any = getCurrentInstance()
+_this.$forceUpdate()
+```
+
+## 绑定全局方法
+
+vue2 中我们在 Vue.prototype 上绑定一个全局方法或变量，这样在每个 vue 组件中就可以 this.出来
+这个方法在 vue3 中不适用
+
+### 使用 provide，inject
+
+```ts
+//引入moment组件
+import moment from 'moment'
+moment.locale('zh-cn', zh)
+app.provide('$moment', moment)
+
+//子组件中使用
+import { inject } from 'vue'
+const $moment = inject('$moment') as any
+```
+
+### 使用 globalProperties
+
+```ts
+import moment from 'moment'
+moment.locale('zh-cn', zh)
+app.config.globalProperties.$moment = moment
+
+//子组件中使用
+import { getCurrentInstance } from 'vue'
+const {
+    proxy: { $moment }
+} = getCurrentInstance()
 ```
