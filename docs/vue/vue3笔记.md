@@ -6,7 +6,7 @@ title: vue3笔记
 
 vue3 中 watch 是 function，第一个参数是需要监听的数据，第二个参数是一个回调函数，被监听的数据发生变化后触发，此回调函数类似 vue2 中 wacth 中的 handel
 
-## 监听单个值
+### 监听单个值
 
 ```javascript
 import { ref, watch } from 'vue'
@@ -131,8 +131,33 @@ export default {
 
 ```
 
+如果使用 setup 语法糖会有所不同,需要使用 defineExpose 将父组件需要的方法和变量暴露出去
+
+```ts
+defineExpose({ num })
+```
+
 ## attrs
 
-## ref 与 reactive
-
 ## torefs
+
+## 监听路由参数变化
+
+```ts
+<script setup>
+import { useRouter } from "vue-router";
+const router = useRouter();
+// 监听当前路由变化
+watch(
+  () => router.currentRoute.value,
+  (to) => {
+    let id = to.query.id as string;
+    if (id) {
+      getDashboardData(id);
+    }
+  },
+  { immediate: true }
+);
+</script>
+
+```
