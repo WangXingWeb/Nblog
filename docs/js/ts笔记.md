@@ -102,3 +102,24 @@ enum SexType {
     GIRL
 }
 ```
+
+## const 断言
+
+## class
+
+### class 实现单例模式
+
+```ts
+class Axios {
+    private static instance: Axios | null = null
+    private constructor(url: string) {
+        console.log('创建Axios对象')
+    }
+    static make() {
+        if (Axios.instance == null) {
+            Axios.instance = new Axios('https:iwangxing.cn')
+        }
+        return Axios.instance
+    }
+}
+```
