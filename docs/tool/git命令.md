@@ -10,6 +10,7 @@ title: git命令
 
 -   git commit -m '修改说明'
 -   git commit --amend 修改最近一次提交
+-   git commit -m '修改说明' --no-verify 跳过 commit 验证
 
 创建版本
 
@@ -101,3 +102,12 @@ title: git命令
 -   git merge dev 合并分支 dev
 -   git merge --abort 处理冲突保留当前分支中的代码
 -   git push origin --delete summer 删除 summer 分支
+
+本地仓库在想做同步远程仓库到本地为之后本地仓库推送到远程仓库做准备时报错了，错误如下：
+
+fatal: refusing to merge unrelated histories
+（拒绝合并不相关的历史）
+
+出现这个问题的最主要原因还是在于本地仓库和远程仓库实际上是独立的两个仓库。假如我之前是直接 clone 的方式在本地建立起远程 github 仓库的克隆本地仓库就不会有这问题了。
+
+git pull origin master –allow-unrelated-histories
