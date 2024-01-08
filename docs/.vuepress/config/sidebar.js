@@ -1,6 +1,25 @@
 module.exports = {
     '/tool/': ['/tool/拷贝vscode插件到另一台电脑', '/tool/github添加密钥'],
-    '/js/': ['/js/js数组去重', 'js要不要加分号'],
+    '/js/': [
+        {
+            title: 'js',
+            collapsable: false,
+            sidebarDepth: 2,
+            children: ['/js/js数组去重', 'js要不要加分号']
+        },
+        {
+            title: 'ts',
+            collapsable: false,
+            sidebarDepth: 2,
+            children: ['/ts/ts笔记', '/ts/ts装饰器']
+        },
+        {
+            title: 'node',
+            collapsable: false,
+            sidebarDepth: 2,
+            children: ['/node/express笔记']
+        }
+    ],
     '/vue/': ['/vue/watch监听器', '/vue/样式穿透', 'vue遍历对象属性'],
     '/css/': [
         {

@@ -1,5 +1,21 @@
 module.exports = [
-    { text: 'js', link: '/js/js数组去重/' },
+    {
+        text: 'js',
+        items: [
+            {
+                text: 'js',
+                link: '/js/js数组去重/'
+            },
+            {
+                text: 'ts',
+                link: '/js/ts/ts笔记'
+            },
+            {
+                text: 'node',
+                link: '/js/node/express笔记'
+            }
+        ]
+    },
     {
         text: 'css',
         items: [
