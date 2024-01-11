@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vscode自定义代码块 | 漫卷</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="ico" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="">
+    <meta name="keywords" content="漫卷,前端,前端开发,javascript,js,css,sass,html,vue,react,jquery，微信小程序">
+    <meta name="author" content="漫卷">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.f564cf05.css" as="style"><link rel="preload" href="/assets/js/app.0543b13e.js" as="script"><link rel="preload" href="/assets/js/8.ca7c8cad.js" as="script"><link rel="preload" href="/assets/js/2.715c9161.js" as="script"><link rel="preload" href="/assets/js/67.bba51254.js" as="script"><link rel="preload" href="/assets/js/3.75a56d7a.js" as="script"><link rel="prefetch" href="/assets/js/10.df63a587.js"><link rel="prefetch" href="/assets/js/100.586aa0f6.js"><link rel="prefetch" href="/assets/js/101.96682d0c.js"><link rel="prefetch" href="/assets/js/102.997286ea.js"><link rel="prefetch" href="/assets/js/103.3c079e44.js"><link rel="prefetch" href="/assets/js/104.43df441c.js"><link rel="prefetch" href="/assets/js/105.2857775b.js"><link rel="prefetch" href="/assets/js/106.2bce360f.js"><link rel="prefetch" href="/assets/js/107.a25c6cc0.js"><link rel="prefetch" href="/assets/js/108.c89d098e.js"><link rel="prefetch" href="/assets/js/109.bf90d51c.js"><link rel="prefetch" href="/assets/js/11.a6e36a26.js"><link rel="prefetch" href="/assets/js/110.4608a726.js"><link rel="prefetch" href="/assets/js/111.d15c03b7.js"><link rel="prefetch" href="/assets/js/112.8d16e974.js"><link rel="prefetch" href="/assets/js/113.fb9e3259.js"><link rel="prefetch" href="/assets/js/12.bdcd0470.js"><link rel="prefetch" href="/assets/js/13.f1abe27b.js"><link rel="prefetch" href="/assets/js/14.5047f4e4.js"><link rel="prefetch" href="/assets/js/15.df0fe7e2.js"><link rel="prefetch" href="/assets/js/16.c8fe3841.js"><link rel="prefetch" href="/assets/js/17.d001b71d.js"><link rel="prefetch" href="/assets/js/18.fa77ef54.js"><link rel="prefetch" href="/assets/js/19.449856a5.js"><link rel="prefetch" href="/assets/js/20.13c7cada.js"><link rel="prefetch" href="/assets/js/21.3fc4a7c9.js"><link rel="prefetch" href="/assets/js/22.d795cea5.js"><link rel="prefetch" href="/assets/js/23.61e8a9ba.js"><link rel="prefetch" href="/assets/js/24.e1042bb1.js"><link rel="prefetch" href="/assets/js/25.89d3773d.js"><link rel="prefetch" href="/assets/js/26.80d042b8.js"><link rel="prefetch" href="/assets/js/27.759dc70d.js"><link rel="prefetch" href="/assets/js/28.cda10a5e.js"><link rel="prefetch" href="/assets/js/29.40bc4045.js"><link rel="prefetch" href="/assets/js/30.00814a75.js"><link rel="prefetch" href="/assets/js/31.cc1e9eb4.js"><link rel="prefetch" href="/assets/js/32.d36f74c0.js"><link rel="prefetch" href="/assets/js/33.e52380c8.js"><link rel="prefetch" href="/assets/js/34.16f3f7d6.js"><link rel="prefetch" href="/assets/js/35.6ea1eda8.js"><link rel="prefetch" href="/assets/js/36.2a374f9c.js"><link rel="prefetch" href="/assets/js/37.08f9776f.js"><link rel="prefetch" href="/assets/js/38.c711bae5.js"><link rel="prefetch" href="/assets/js/39.69f665d2.js"><link rel="prefetch" href="/assets/js/4.9fd2ba3d.js"><link rel="prefetch" href="/assets/js/40.4266ecb6.js"><link rel="prefetch" href="/assets/js/41.fe94e640.js"><link rel="prefetch" href="/assets/js/42.7428af25.js"><link rel="prefetch" href="/assets/js/43.50719f95.js"><link rel="prefetch" href="/assets/js/44.e5e46933.js"><link rel="prefetch" href="/assets/js/45.2b9a712a.js"><link rel="prefetch" href="/assets/js/46.c99a49c6.js"><link rel="prefetch" href="/assets/js/47.4b5a86aa.js"><link rel="prefetch" href="/assets/js/48.47d22f5f.js"><link rel="prefetch" href="/assets/js/49.5e3692b7.js"><link rel="prefetch" href="/assets/js/5.7e5b8497.js"><link rel="prefetch" href="/assets/js/50.45e6bd95.js"><link rel="prefetch" href="/assets/js/51.2e69b312.js"><link rel="prefetch" href="/assets/js/52.f06dc847.js"><link rel="prefetch" href="/assets/js/53.52a3e2b4.js"><link rel="prefetch" href="/assets/js/54.2b9a74c5.js"><link rel="prefetch" href="/assets/js/55.5d685ab3.js"><link rel="prefetch" href="/assets/js/56.d995d7ad.js"><link rel="prefetch" href="/assets/js/57.ba1377d0.js"><link rel="prefetch" href="/assets/js/58.98cc2bd9.js"><link rel="prefetch" href="/assets/js/59.96f7f553.js"><link rel="prefetch" href="/assets/js/6.a1990fea.js"><link rel="prefetch" href="/assets/js/60.0f166e69.js"><link rel="prefetch" href="/assets/js/61.472c0ba9.js"><link rel="prefetch" href="/assets/js/62.75b50b9f.js"><link rel="prefetch" href="/assets/js/63.1631c49a.js"><link rel="prefetch" href="/assets/js/64.97026aad.js"><link rel="prefetch" href="/assets/js/65.e56178a8.js"><link rel="prefetch" href="/assets/js/66.64e29993.js"><link rel="prefetch" href="/assets/js/68.666b52b1.js"><link rel="prefetch" href="/assets/js/69.f2c971e8.js"><link rel="prefetch" href="/assets/js/7.324573aa.js"><link rel="prefetch" href="/assets/js/70.efe75408.js"><link rel="prefetch" href="/assets/js/71.301e4eca.js"><link rel="prefetch" href="/assets/js/72.5913faf7.js"><link rel="prefetch" href="/assets/js/73.88489469.js"><link rel="prefetch" href="/assets/js/74.3e868909.js"><link rel="prefetch" href="/assets/js/75.1380a354.js"><link rel="prefetch" href="/assets/js/76.79f91ee0.js"><link rel="prefetch" href="/assets/js/77.813852d6.js"><link rel="prefetch" href="/assets/js/78.53ae4cf4.js"><link rel="prefetch" href="/assets/js/79.bffd68d3.js"><link rel="prefetch" href="/assets/js/80.334cb11e.js"><link rel="prefetch" href="/assets/js/81.5b3cf2a6.js"><link rel="prefetch" href="/assets/js/82.20afe703.js"><link rel="prefetch" href="/assets/js/83.7ff5605b.js"><link rel="prefetch" href="/assets/js/84.1d8103fe.js"><link rel="prefetch" href="/assets/js/85.1cfe41e5.js"><link rel="prefetch" href="/assets/js/86.375d0c03.js"><link rel="prefetch" href="/assets/js/87.a5da272e.js"><link rel="prefetch" href="/assets/js/88.2b755290.js"><link rel="prefetch" href="/assets/js/89.0dc85241.js"><link rel="prefetch" href="/assets/js/9.4bb4cc56.js"><link rel="prefetch" href="/assets/js/90.c5a80f1d.js"><link rel="prefetch" href="/assets/js/91.d9631c9c.js"><link rel="prefetch" href="/assets/js/92.299b84d0.js"><link rel="prefetch" href="/assets/js/93.a60d3519.js"><link rel="prefetch" href="/assets/js/94.f001945d.js"><link rel="prefetch" href="/assets/js/95.764baf79.js"><link rel="prefetch" href="/assets/js/96.5845f96b.js"><link rel="prefetch" href="/assets/js/97.6ba4e5f2.js"><link rel="prefetch" href="/assets/js/98.405787b0.js"><link rel="prefetch" href="/assets/js/99.01e80f88.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f564cf05.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="漫卷" class="logo"> <span class="site-name can-hide">漫卷</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/js/js数组去重/" class="nav-link">
+  js
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="css" class="dropdown-title"><span class="title">css</span> <span class="arrow down"></span></button> <button type="button" aria-label="css" class="mobile-dropdown-title"><span class="title">css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/css盒模型.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/css/sass/sass混合器.html" class="nav-link">
+  sass
+</a></li><li class="dropdown-item"><!----> <a href="/css/less/构建css工具库less版.html" class="nav-link">
+  less
+</a></li></ul></div></div><div class="nav-item"><a href="/vue/watch监听器/" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/react/react笔记/" class="nav-link">
+  react
+</a></div><div class="nav-item"><a href="/tool/拷贝vscode插件到另一台电脑.html" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="/杂项/微信小程序生命周期.html" class="nav-link">
+  杂项
+</a></div><div class="nav-item"><a href="/收藏/组件库.html" class="nav-link">
+  收藏
+</a></div><div class="nav-item"><a href="https://iwangxing.cn/manjuan" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  旧版
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/js/js数组去重/" class="nav-link">
+  js
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="css" class="dropdown-title"><span class="title">css</span> <span class="arrow down"></span></button> <button type="button" aria-label="css" class="mobile-dropdown-title"><span class="title">css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/css盒模型.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/css/sass/sass混合器.html" class="nav-link">
+  sass
+</a></li><li class="dropdown-item"><!----> <a href="/css/less/构建css工具库less版.html" class="nav-link">
+  less
+</a></li></ul></div></div><div class="nav-item"><a href="/vue/watch监听器/" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/react/react笔记/" class="nav-link">
+  react
+</a></div><div class="nav-item"><a href="/tool/拷贝vscode插件到另一台电脑.html" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="/杂项/微信小程序生命周期.html" class="nav-link">
+  杂项
+</a></div><div class="nav-item"><a href="/收藏/组件库.html" class="nav-link">
+  收藏
+</a></div><div class="nav-item"><a href="https://iwangxing.cn/manjuan" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  旧版
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Tool</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tool/VScode自定义代码块.html" class="active sidebar-link">vscode自定义代码块</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tool/VScode自定义代码块.html#如何自定义代码块-snippet" class="sidebar-link">如何自定义代码块 snippet</a></li><li class="sidebar-sub-header"><a href="/tool/VScode自定义代码块.html#snippet-包含的内容" class="sidebar-link">snippet 包含的内容</a></li><li class="sidebar-sub-header"><a href="/tool/VScode自定义代码块.html#snippet-用法" class="sidebar-link">snippet 用法</a></li></ul></li><li><a href="/tool/github添加密钥.html" class="sidebar-link">github添加密钥</a></li><li><a href="/tool/git命令.html" class="sidebar-link">git命令</a></li><li><a href="/tool/git配置忽略文件.html" class="sidebar-link">git配置忽略文件</a></li><li><a href="/tool/npm和yarn的区别.html" class="sidebar-link">npm和yarn的区别</a></li><li><a href="/tool/npm设置淘宝镜像.html" class="sidebar-link">npm设置淘宝镜像</a></li><li><a href="/tool/vite笔记.html" class="sidebar-link">vite笔记</a></li><li><a href="/tool/webpack笔记.html" class="sidebar-link">webpack笔记</a></li><li><a href="/tool/修改UEditor源码支持上传音频.html" class="sidebar-link">修改UEditor源码支持上传音频</a></li><li><a href="/tool/拷贝vscode插件到另一台电脑.html" class="sidebar-link">拷贝vscode插件到另一台电脑</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p>熟练使用自定义代码块，可以提升我们的开发效率。这里向大家介绍如何在 vscode 中添加自定义代码块。</p> <h2 id="如何自定义代码块-snippet"><a href="#如何自定义代码块-snippet" class="header-anchor">#</a> 如何自定义代码块 snippet</h2> <ul><li><p>打开 vscode&gt;文件&gt;首选项&gt;用户代码片段，可以看到下面的界面</p> <img src="/assets/img/snippet.png" class="custom"></li> <li><p>或者按 ctrl +shift + p 输入 snippet 新建</p></li> <li><p>如果你希望在 markdown 文件也能启动快捷提醒，需要在 vscode 的 setting.json 中加入</p></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string-property property">&quot;[markdown]&quot;</span><span class="token operator">:</span>  <span class="token punctuation">{</span>
+	<span class="token string-property property">&quot;editor.quickSuggestions&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="snippet-包含的内容"><a href="#snippet-包含的内容" class="header-anchor">#</a> snippet 包含的内容</h2> <p>snippet 其实就是一个特定格式的 json 文件，这个 json 对象中的每一个属性就是一个自定义的代码块。每个代码块必须包含<code>scope</code>,<code>prefix</code>,<code>body</code>,<code>description</code>四部分。 - scope 表示是代码块生效的语言范围，比如设置为 javascript，则只能在 js 中生效
+在 css 中则没有效果</p> <ul><li>prefix 就代码块的关键字，在 vscode 输入 prefix 对应的字符 vscode 的只能提示就会出现我们设定的代码块，选中我们的代码块回车就可以插入我们预置的代码块了。</li> <li>body 是代码块的主体，是一个字符串数组。数组中的每一项对应着生成代码的每一行。这个后面再重点说明。</li> <li>description 就是我们对这个代码块的描述，可以理解为我们对代码块的注释。不是必须项。</li></ul> <h2 id="snippet-用法"><a href="#snippet-用法" class="header-anchor">#</a> snippet 用法</h2> <h3 id="制表位-tabstops"><a href="#制表位-tabstops" class="header-anchor">#</a> 制表位(Tabstops)</h3> <p>制表位在插入代码块后控制光标的位置，方便我们下一步编辑这段代码。使用$1,$2,$3...来指定光标的位置,按<code>Tab</code>键切换贯标位置。数字代表光标的移动的顺序，值得注意的时$0 代表光标的最后位置（当所有制表位走完光标会回到$0 的位置，记住$0 并不是光标的第一个位置）。如果有多个相同的制表位(Tabstops)会在编译器里同时出现多个光标。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+	<span class="token string-property property">&quot;console.log&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token string-property property">&quot;scope&quot;</span><span class="token operator">:</span> <span class="token string">&quot;javascript,typescript&quot;</span><span class="token punctuation">,</span>
+		<span class="token string-property property">&quot;prefix&quot;</span><span class="token operator">:</span> <span class="token string">&quot;log&quot;</span><span class="token punctuation">,</span>
+		<span class="token string-property property">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+			<span class="token string">&quot;console.log($1,'这是我自定义的console.log');&quot;</span><span class="token punctuation">,</span>
+			<span class="token string">&quot;$2&quot;</span>
+		<span class="token punctuation">]</span><span class="token punctuation">,</span>
+		<span class="token string-property property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;这是我自定义的console.log&quot;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>上面的代码在我们插入代码块后光标先到$1 的位置，在我们输入完需要 console.log 的内容后，按<code>Tab</code>就可以到$2 的位置继续编写下面的代码了。</p> <h3 id="占位符-placeholders"><a href="#占位符-placeholders" class="header-anchor">#</a> 占位符(Placeholders)</h3> <p>占位符(Placeholders) 是带默认值的制表位(Tabstops),占位符(Placeholders)的文本会被插入到制表位(Tabstops)所在位置并且全选以方便修改。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+<span class="token string-property property">&quot;function&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+		<span class="token string-property property">&quot;scope&quot;</span><span class="token operator">:</span> <span class="token string">&quot;javascript,typescript&quot;</span><span class="token punctuation">,</span>
+		<span class="token string-property property">&quot;prefix&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fun&quot;</span><span class="token punctuation">,</span>
+		<span class="token string-property property">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+			<span class="token string">&quot;function ${1:functionName}(${2:param}){&quot;</span><span class="token punctuation">,</span>
+			<span class="token string">&quot;    $3&quot;</span><span class="token punctuation">,</span>
+			<span class="token string">&quot;}&quot;</span>
+		<span class="token punctuation">]</span><span class="token punctuation">,</span>
+		<span class="token string-property property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;function&quot;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="选择项-choice"><a href="#选择项-choice" class="header-anchor">#</a> 选择项(Choice)</h3> <p>占位符(Placeholders)可以有多选值，每个选项的值用 , 分隔，选项的开始和结束用管道符号(|)将选项包含，例如: ${1|one,two,three|}，当插入代码片段，选择制制表位(Tabstops)的时候，会列出选项供用户选择。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+<span class="token string-property property">&quot;$ajax&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+		<span class="token string-property property">&quot;scope&quot;</span><span class="token operator">:</span> <span class="token string">&quot;javascript,typescript&quot;</span><span class="token punctuation">,</span>
+		<span class="token string-property property">&quot;prefix&quot;</span><span class="token operator">:</span> <span class="token string">&quot;$ajax&quot;</span><span class="token punctuation">,</span>
+		<span class="token string-property property">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+			<span class="token string">&quot;$.${1|get,post|}(${2:url},${3:data},function(data){&quot;</span><span class="token punctuation">,</span>
+			<span class="token string">&quot;    $4&quot;</span><span class="token punctuation">,</span>
+			<span class="token string">&quot;})&quot;</span>
+		<span class="token punctuation">]</span><span class="token punctuation">,</span>
+		<span class="token string-property property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;$ajax&quot;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>上面的代码我们可以自由选择使用 get 还是 post 方法。</p> <h3 id="变量-variables"><a href="#变量-variables" class="header-anchor">#</a> 变量(Variables)</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string-property property">&quot;Add multi-line comments&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;scope&quot;</span><span class="token operator">:</span> <span class="token string">&quot;javascript,typescript,vue&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;prefix&quot;</span><span class="token operator">:</span> <span class="token string">&quot;funz&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;/**&quot;</span><span class="token punctuation">,</span>
+     <span class="token string">&quot; * @name ${1}&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot; * @desc $2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot; * @author Falost&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot; * @time $CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot; * @param {${4|Object,String,Number,Array,Function|}} {$5}&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot; * @return {${6|Object,String,Number,Array,Function|}} {$7}&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot; */$10&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Add multi-line comments&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>上面代码自定义了方法注释代码
+下面是其他常用的参数</p> <ul><li><p>TM_SELECTED_TEXT 当前选中文本或者空字符串(The currently selected text or the empty string)</p></li> <li><p>TM_CURRENT_LINE 当前行的内容(The contents of the current line)</p></li> <li><p>TM_CURRENT_WORD 光标下的单词的内容或者是空字符串(The contents of the word under cursor or the empty string)</p></li> <li><p>TM_LINE_INDEX 基于行号的 0-索引(The zero-index based line number)</p></li> <li><p>TM_LINE_NUMBER 基于行号的 1-索引(The one-index based line number)</p></li> <li><p>TM_FILENAME 当前文档的文件名(The filename of the current document)</p></li> <li><p>TM_FILENAME_BASE 不带有文件扩展名的文件名(The filename of the current document without its extensions)</p></li> <li><p>TM_DIRECTORY 当前文档对象的路径名(The directory of the current document)</p></li> <li><p>TM_FILEPATH 当前文档对象的绝对路径(The full file path of the current document)</p></li> <li><p>CLIPBOARD 粘贴板中的内容(The contents of your clipboard)</p></li> <li><p>WORKSPACE_NAME 打开的工作区或者文件夹名(The name of the opened workspace or folder)
+插入当前日期和时间:</p></li> <li><p>CURRENT_YEAR 当前年份(The current year)</p></li> <li><p>CURRENT_YEAR_SHORT 当前年份的最后两位数字(The current year’s last two digits)</p></li> <li><p>CURRENT_MONTH 用两位数表示的月份(The month as two digits (example ‘02’))</p></li> <li><p>CURRENT_MONTH_NAME 月份的全称(The full name of the month (example ‘July’))</p></li> <li><p>CURRENT_MONTH_NAME_SHORT 月份的简称(The short name of the month (example ‘Jul’))</p></li> <li><p>CURRENT_DATE 当前月份中当前日期，例如 1/23，返回的值为 23(The day of the month)</p></li> <li><p>CURRENT_DAY_NAME 当前日期的星期名(The name of day (example ‘Monday’))</p></li> <li><p>CURRENT_DAY_NAME_SHORT 当前日期的星期名的简称(The short name of the day (example ‘Mon’))</p></li> <li><p>CURRENT_HOUR 用 24 时表示的当前小时数(The current hour in 24-hour clock format)</p></li> <li><p>CURRENT_MINUTE 当前分钟数(The current minute)</p></li> <li><p>CURRENT_SECOND 当前秒钟数(The current second)</p></li> <li><p>BLOCK_COMMENT_START (Example output: in PHP /* or in HTML )</p></li> <li><p>LINE_COMMENT (Example output: in PHP // or in HTML )</p></li></ul> <p>参考链接：https://blog.csdn.net/Enl0ve/article/details/93167202</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2022年4月3日星期日 22:53</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/tool/github添加密钥.html">
+        github添加密钥
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.0543b13e.js" defer></script><script src="/assets/js/8.ca7c8cad.js" defer></script><script src="/assets/js/2.715c9161.js" defer></script><script src="/assets/js/67.bba51254.js" defer></script><script src="/assets/js/3.75a56d7a.js" defer></script>
+  </body>
+</html>
